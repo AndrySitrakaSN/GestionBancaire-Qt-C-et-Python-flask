@@ -1,0 +1,45 @@
+body{
+    background-color: rgba(218, 218, 218, 0.315);
+}
+
+.entete{
+    padding: 20px;
+    margin-bottom: 90px;
+    background-color: rgb(233, 224, 224);
+}
+
+.corps{
+    border-radius: 5%; 
+    padding: -400000px;
+    margin-left:40%;
+    margin-right: 40%;
+    margin-bottom: 100px;
+    background-color: rgb(233, 224, 224);
+    padding: 10px;
+    
+}
+.label{
+    text-align:left;
+}
+
+.footer {
+    background-color: rgba(145, 131, 131, 0.315);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}

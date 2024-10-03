@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link href="signin.css" rel="stylesheet">
+    <title>Connexion</title>
+</head>
+<body>
+<!-- Header-->
+<div class="entete" >
+    BANQUE MADAGASCAR 
+    <span style="background-color: white; padding:1%; color:red;" >BM</span>
+</div>
+<!--Corps-->
+<div class="corps"> 
+<center>
+    <center>
+        <p>Se connecter sur 
+             <span style="background-color: white; padding:2%; color:red;" >BM</span>
+             </p>
+        </center>
+    <form action="/login" method="POST">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        <br> <br>
+      <input type="submit" value="Se connecter" class="btn btn-primary">
+    </form>
+</center>
+</div>
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 id="contact">Contact
+                
+                </h5>
+                <p>Email: <a href="">snrs@gmail.com</a></p>
+                <p>Email: <a href="">snrs@gmail.com</a></p>
+                <p>Email: <a href="">snrs@gmail.com</a></p>
+                
+                <p>Téléphone: +261 34 00 000 21</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Suivez-nous</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/facebook.png') }}" alt="Facebook">
+                        
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/twitter.png') }}"alt="Twitter">
+                  
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/instagram.png') }}"alt="Instagram">
+                     
+                    </a>
+                    <a href="../https://linkedin.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/linkedin.png') }}" alt="LinkedIn">
+                    
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 id="about">À propos</h5>
+                <p></p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="text-muted">&copy; 2024 Company.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

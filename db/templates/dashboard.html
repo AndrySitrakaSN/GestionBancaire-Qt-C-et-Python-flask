@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+<!-- Header-->
+<div class="entete" >
+    BANQUE MADAGASCAR 
+    <span style="background-color: white; padding:1%; color:red;" >BM</span>
+</div>
+<!--Corps-->
+    <div class="container">
+        <div class="row">
+            <article class="col-md-2">
+            </article>
+            <article class="col-md-8">
+            <div class="     corps"  >
+                  <h2>Bienvenue sur votre Compte <span style="background-color: white; padding:2%; color:red;" >BM
+                  <a href="/logout" class="btn btn-danger"  >Se déconnecter</a>
+                  </span></h2>
+                  <p>Bonjour  {{nom}} {{prenom}}</p>
+                  <table class="table table-striped ">
+                    <tr>
+                          <td>Email </td>
+                          <td>{{email}}</td>
+                    </tr>
+                    <tr>
+                          <td>Téléphone </td>
+                          <td>{{telephone}}</td>
+                    </tr>
+                    <tr>
+                          <td>Adresse </td>
+                          <td> {{ adresse}}</td>
+                    </tr>
+                    <tr class="" style="font-size: 150%;"  >
+                           <td>Montant</td>
+                           <td   class="text-primary" > {{ solde }}Ar</td>
+                    </tr>
+                 </table>    
+
+                  <!-- Lien de déconnexion qui appelle logout.php -->
+                  
+            </div>
+            </article>
+            <article class="col-md-2">
+            </article>
+       </div>
+</div>  <br>
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 id="contact">Contact
+                
+                </h5>
+                <p>Email: <a href="">snrs@gmail.com</a></p>
+                <p>Téléphone: +261 34 00 000 21</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Suivez-nous</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/facebook.png') }}" alt="Facebook">
+                        
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/twitter.png') }}"alt="Twitter">
+                  
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/instagram.png') }}"alt="Instagram">
+                     
+                    </a>
+                    <a href="../https://linkedin.com" target="_blank">
+                        <img src="{{ url_for('static', filename='image/linkedin.png') }}" alt="LinkedIn">
+                    
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 id="about">À propos</h5>
+                <p></p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="text-muted">&copy; 2024 Company.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
